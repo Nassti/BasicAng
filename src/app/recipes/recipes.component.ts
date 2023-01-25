@@ -12,5 +12,11 @@ import { RecipesService } from "./recipes.service";
 export class RecipesComponent {
   recipeItemSelected!: Recipe;
 
+  constructor(private recipesService: RecipesService) {
+    recipesService.recipeSelected.subscribe((el: Recipe) => {
+      this.recipeItemSelected = el;
+    })
+  }
+
 
 }
