@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  recipe = true;
 
-  onSelect(b: boolean) {
-    this.recipe = b;
-  }
 }
